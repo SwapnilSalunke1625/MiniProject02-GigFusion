@@ -1,0 +1,17 @@
+{
+    "name": "My Codespace Environment",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "s3gf4ult.monokai-vibrant",
+                "rangav.vscode-thunder-client",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "c0der-himel.vscode-wev-dev-extension-pack"
+            ]
+        }
+    }
+}

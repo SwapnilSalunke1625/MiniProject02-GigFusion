@@ -1,0 +1,36 @@
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #f3f4f6;
+}
