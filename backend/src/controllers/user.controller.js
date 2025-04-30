@@ -426,6 +426,8 @@ const getCurrentChatters = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, users, "Chatters fetched successfully"));
 });
 
+
+
 const sendMessage = asyncHandler(async (req, res) => {
   const { message } = req.body;
   const receiverId = req.params.id;
@@ -472,6 +474,8 @@ const sendMessage = asyncHandler(async (req, res) => {
     .status(201)
     .json(new ApiResponse(201, createdMessage, "Message Sent Successfully"));
 });
+
+
 
 const getMessages = asyncHandler(async (req, res) => {
   const receiverId = req.params.id;
@@ -647,6 +651,9 @@ const rateJob = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, jobPost, "Job Rated Successfully"));
 });
 
+
+// this is send mail module start from here.
+
 const sendMail = asyncHandler(async (req, res) => {
   const { email, name, zipCode } = req.body;
 
@@ -786,6 +793,10 @@ const sendMail = asyncHandler(async (req, res) => {
   });
   // return res.status(200).json(new ApiResponse(200, {}, "Email sent successfully"));
 });
+
+
+// finish sendmail module.
+
 
 const getLocation = asyncHandler(async (req, res) => {
   const { lat, lng } = req.body;
